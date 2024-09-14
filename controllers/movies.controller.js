@@ -3,7 +3,11 @@ export const MoviesRead=(req,res)=>{
  };
 
  export const MoviesCerate=(req,res)=>{
-    res.send('create movies');
+    
+    console.log(req.body);
+
+    return res.json(req.body);
+    
 };
 
 export const MoviesUpdate=(req,res)=>{

@@ -5,6 +5,10 @@ import connectDB from './database/db.js';
 
 const app=express();
 const PORT=8000;
+
+//data understanding
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
  //database connection
  connectDB()
 
