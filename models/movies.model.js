@@ -1,8 +1,17 @@
 import { model, Schema } from "mongoose";
+import { type } from "os";
 
 const schema=new Schema({
-    title: String,
-    disc: String
+    title: {
+        type:String,
+        require:true,
+        unique:true
+    },
+    disc:{
+        type: String,
+        require: true,
+        unique:true
+    }
 });
 
 

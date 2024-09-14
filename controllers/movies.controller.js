@@ -9,7 +9,7 @@ export const MoviesRead=(req,res)=>{
    const Newmovie = new Movie({
         title:req.body.title,
         disc:req.body.disc
-    })
+    });
 
     
 
