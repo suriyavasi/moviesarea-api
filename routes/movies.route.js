@@ -1,19 +1,27 @@
 import express from 'express';
 
-const route=express.Router();
+const route= express.Router();
 
 
 // reading movies
-route.get("/movies",()=>{})
+route.get("/",(req,res)=>{
+   res.send('read movies');
+});
 
 // creating movies
-route.post("/movies",()=>{})
+route.post("/",(req,res)=>{
+    res.send('create movies');
+});
 
 // updating
-route.put("/movies",()=>{})
+route.put("/:id",(req,res)=>{
+    res.send("update movies");
+});
 
 // delete
-route.delete("/movies",()=>{})
+route.delete("/:id",(req,res)=>{
+    res.send('delete movies');
+});
 
 
 export default route;

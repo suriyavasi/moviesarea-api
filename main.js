@@ -1,5 +1,5 @@
 import express from 'express';
-import Moviesroute from './routes/movies.route';
+import Moviesroute from './routes/movies.route.js';
 
 
 const app=express();
@@ -15,7 +15,8 @@ app.use("/movies",Moviesroute)
 
 
 
+
 app.listen(PORT,()=>{
-    console.log(`the port is running successful http://localhost:$(PORT)`);
+    console.log(`the port is running successful http://localhost:${PORT}`);
     
 });
